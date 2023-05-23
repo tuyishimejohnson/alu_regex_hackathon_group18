@@ -1,5 +1,5 @@
 
-# Importing Regular Expression
+# Importing Regular Expression from python library
 
 
 import re
@@ -9,11 +9,11 @@ import re
 ip_pattern = r'^(?:[0-9]{1,3}\.){3}[0-9]{1,3}$'
 
 
-"""Creating a variable IP adress for random numbers 
-with the maximum of three digits, followed by period for each three digits, with a backslash."""
+"""Creating a variable IP adress for inputing random numbers 
+with the maximum of twelve digits, followed by period for each one to three digits."""
 
 
-ip_address = '984.148.84.0'
+ip_address = input('Enter an IP address: ')
 
 
 a = re.search(ip_pattern, ip_address)
